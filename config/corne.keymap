@@ -62,8 +62,28 @@
                         bindings = <
    &none      &none         &none         &none         &none         &none           &none &none         &none         &none       &none &none 
    &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none &none 
-   &none      &none         &none         &none         &none         &none           &none &none         &none         &none       &none &none 
+   &none      &none         &none         &none         &tog 4        &none           &none &none         &none         &none       &none &none 
                                           &none         &none         &none           &none &none         &none 
+                        >;
+                };
+
+                gamer_layer {
+                        display-name = "Gamer";
+                        bindings = <
+    &kp T &kp TAB &kp Q  &kp W  &kp E &kp R     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+    &kp G &kp LCTRL &kp A &kp S &kp D &kp F     &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+    &kp B &kp LSHFT &kp Z &kp X &kp C &kp V     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RALT   
+              &kp ESC &mo 5 &kp SPACE   &kp RET &mo 2 &kp RGUI
+                        >;
+                };
+
+                gamer_num_layer {
+                      display-name = "Gamer Num";
+                      bindings = <
+   &kp N5     &kp TAB     &kp N1       &kp N2        &kp N3      &kp N4         &kp N6   &kp N7   &kp UP    &kp N9     &kp N0  &kp BSPC
+   &trans     &trans      &trans       &trans        &trans      &trans         &kp N8   &kp LEFT &kp DOWN  &kp RIGHT  &trans  &trans
+   &kp F1     &kp F2      &kp F3       &kp F4        &kp F5      &kp F6         &kp F7   &kp F8   &kp F9    &kp F10    &kp F11 &kp F12
+                                       &kp LCTRL     &trans      &kp SPACE      &kp RET  &mo 3    &kp RGUI
                         >;
                 };
         };
