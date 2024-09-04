@@ -9,12 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    chosen {
-    zmk, matrix_trasnform = &default_transform;
-    };
-  };
-
-/ {
         keymap {
                 compatible = "zmk,keymap";
 
