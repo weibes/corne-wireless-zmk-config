@@ -58,16 +58,28 @@
                 };
 
                 both_layer {
+
+// -----------------------------------------------------------------------------------------
+// |      |      |      |      |      |      |       |       |       |      |     |     |      |
+// | BT_C | BT_0 | BT_1 | BT_2 | BT_3 | BT_3 | BT_4  | VOLDN | VOLUP | MUTE |     |     |      |
+// |      |      |      |      |      | GAME |       |       |       |      |     |     |      |
+//                      |      |      |      |       |       |       |      |
+
                         label = "RANDOM";
                         bindings = <
    &none      &none         &none         &none         &none         &none           &none &none         &none         &none       &none &none 
    &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none &none 
    &none      &none         &none         &none         &tog 4        &none           &none &none         &none         &none       &none &none 
-                                          &none         &none         &none           &none &none         &none 
+                                          &none         &trans        &none           &none &trans         &none 
                         >;
                 };
 
                 gamer_layer {
+// -----------------------------------------------------------------------------------------
+// |  T   |  TAB |  Q  |  W  |  E  |  R  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// |  G   | LCTRL|  A  |  S  |  D  |  F  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// |  B   | SHFT |  Z  |  X  |  C  |  V  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
+//                    | ESC  | LWR | SPC |   | ENT | RSE  | GUI |
                         label = "GAMING";
                         bindings = <
     &kp T &kp TAB &kp Q  &kp W  &kp E &kp R     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
