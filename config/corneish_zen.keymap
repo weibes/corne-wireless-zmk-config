@@ -18,7 +18,7 @@
 // | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | CTRL | LWR | SPC |   | ENT | RSE  | GUI |
-                        display-name = "Base";
+                        label = "QWERTY";
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
@@ -33,7 +33,7 @@
 // |      |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     | ALT  |
 // | F1   | F2  | F3  |  F4 | F5  | F6  |   | F7  | F8  |  F9 | F10 | F11 | F12  |
 //                    | CTRL |     | SPC |   | ENT | BOTH | GUI |
-                        display-name = "Lower";
+                        label = "NUMBER";
                         bindings = <
    &kp LA(TAB) &kp N1       &kp N2       &kp N3        &kp N4      &kp N5      &kp N6   &kp N7   &kp N8 &kp N9     &kp N0  &kp BSPC
    &bt BT_CLR      &bt BT_SEL 0       &trans       &trans        &trans      &trans      &kp LEFT &kp DOWN &kp UP &kp RIGHT  &trans  &kp RALT
@@ -48,7 +48,7 @@
 // | ESC  |     |  \  |  -  |  `  |  (  |   |  )  |  {  |  }  |  =  |  ;  |  '   |
 // | SHFT |     |  |  |  _  |  ~  |     |   |     |  [  |  ]  |  +  |     |      |
 //                    | CTRL| BOTH| SPC |   | ENT |     | GUI |
-                        display-name = "Raise";
+                        label = "SYMBOL";
                         bindings = <
    &kp TAB   &kp EXCL &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp BSPC
    &kp ESC   &none    &kp BSLH  &kp MINUS &kp GRAVE &kp LPAR    &kp RPAR  &kp LBRC  &kp RBRC        &kp EQUAL &kp SEMI  &kp SQT
@@ -58,7 +58,7 @@
                 };
 
                 both_layer {
-                        display-name = "Both";
+                        label = "RANDOM";
                         bindings = <
    &none      &none         &none         &none         &none         &none           &none &none         &none         &none       &none &none 
    &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &none &none 
@@ -68,7 +68,7 @@
                 };
 
                 gamer_layer {
-                        display-name = "Gamer";
+                        label = "GAMING";
                         bindings = <
     &kp T &kp TAB &kp Q  &kp W  &kp E &kp R     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
     &kp G &kp LCTRL &kp A &kp S &kp D &kp F     &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
@@ -78,7 +78,7 @@
                 };
 
                 gamer_num_layer {
-                      display-name = "Gamer Num";
+                      label = "GAMENU";
                       bindings = <
    &kp N5     &kp TAB     &kp N1       &kp N2        &kp N3      &kp N4         &kp N6   &kp N7   &kp UP    &kp N9     &kp N0  &kp BSPC
    &trans     &trans      &trans       &trans        &trans      &trans         &kp N8   &kp LEFT &kp DOWN  &kp RIGHT  &trans  &trans
